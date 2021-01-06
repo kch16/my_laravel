@@ -24,10 +24,17 @@ class EventServiceProvider extends ServiceProvider
         ],
     ];
     */
+    /*
     protected $listen =[
       ArticlesEvent::class=>[
         ArticlesEventListener::class,
       ],
+    ];
+    */
+    protected $listen=[
+      \Illuminate\Auth\Events\Login::class=>[
+        \App\Listeners\UsersEventListener::class
+      ]
     ];
     /**
      * Register any events for your application.
