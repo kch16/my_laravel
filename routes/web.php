@@ -102,6 +102,7 @@ Route::get('auth/logout', function()
 Route::resource('articles','ArticlesController');
 
 
+
 /*
 DB::listen(function($query)
 {
